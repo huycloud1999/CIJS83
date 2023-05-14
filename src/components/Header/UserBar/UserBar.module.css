@@ -1,0 +1,72 @@
+.userBar {
+    position: absolute;
+    right: 8%;
+    top: 12%;
+    padding: 12px 20px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.userBtn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 10px 12px;
+    color: #fff;
+    margin-right: 12px;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    background: #ECDB54;
+    box-shadow: inset 0 0 0 50px #E94B3C;
+}
+
+.userBtn:hover {
+    color: #222222;
+    box-shadow: inset 0 0 0 0 #E94B3C;
+    border: none;
+}
+
+.interactBtn1,
+.interactBtn2 {
+    position: relative;
+    display: inline-block;
+    margin: 12px;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #E94B3C;
+    border: none;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    border-radius: 16px;
+}
+
+.interactBtn1 {
+    box-shadow: inset 0 0 0 0 #ECDB54;
+}
+
+.interactBtn1:hover {
+    color: #222222;
+    box-shadow: inset 200px 50px 0 0 #ECDB54;
+}
+
+.interactBtn2 {
+    box-shadow: inset 0 0 0 0 #ECDB54;
+}
+
+.interactBtn2:hover {
+    color: #222222;
+    box-shadow: inset -200px -50px 0 0 #ECDB54;
+}

@@ -1,4 +1,5 @@
 .sliding-form {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,3 +53,53 @@
   transition: opacity 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
     transform 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?cs=srgb&dl=pexels-stephan-seeber-1054218.jpg&fm=jpg");
+    background-size: cover;
+  }
+  
+  .form-wrapper {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .form-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 300ms ease-in-out, transform 500ms ease-in-out;
+  }
+  
+  .form-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  .form-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 300ms ease-in-out, transform 500ms ease-in-out;
+  }
+>>>>>>> 25b4b44e31b50fcdd09ba8489c8b75a76332be8a

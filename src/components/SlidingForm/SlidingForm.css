@@ -1,0 +1,49 @@
+.sliding-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("C:\Users\huycloud1999\Desktop\BTCK\CIJS83\src\public\image\pexels-stephan-seeber-1054218.jpg");
+    background-size: cover;
+  }
+  
+  .form-wrapper {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .form-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 300ms ease-in-out, transform 500ms ease-in-out;
+  }
+  
+  .form-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  .form-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 300ms ease-in-out, transform 500ms ease-in-out;
+  }

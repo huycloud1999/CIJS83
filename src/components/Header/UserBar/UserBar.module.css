@@ -16,20 +16,20 @@
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid red;
+    border: 1px solid #7f5af0;
     padding: 10px 12px;
     color: #fff;
     margin-right: 12px;
     transition: ease-out 0.5s;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
-    background: #ECDB54;
-    box-shadow: inset 0 0 0 50px #E94B3C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #7f5af0;
 }
 
 .userBtn:hover {
     color: #222222;
-    box-shadow: inset 0 0 0 0 #E94B3C;
+    box-shadow: inset 0 0 0 0 #7f5af0;
     border: none;
 }
 
@@ -44,7 +44,7 @@
     letter-spacing: 1px;
     text-decoration: none;
     color: #ffffff;
-    background: #E94B3C;
+    background: #7f5af0;
     border: none;
     cursor: pointer;
     transition: ease-out 0.5s;
@@ -54,19 +54,19 @@
 }
 
 .interactBtn1 {
-    box-shadow: inset 0 0 0 0 #ECDB54;
+    box-shadow: inset 0 0 0 0 #ffffff;
 }
 
 .interactBtn1:hover {
     color: #222222;
-    box-shadow: inset 200px 50px 0 0 #ECDB54;
+    box-shadow: inset 200px 50px 0 0 #ffffff;
 }
 
 .interactBtn2 {
-    box-shadow: inset 0 0 0 0 #ECDB54;
+    box-shadow: inset 0 0 0 0 #ffffff;
 }
 
 .interactBtn2:hover {
     color: #222222;
-    box-shadow: inset -200px -50px 0 0 #ECDB54;
+    box-shadow: inset -200px -50px 0 0 #ffffff;
 }

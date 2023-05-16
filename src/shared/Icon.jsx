@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Icon({ size, ...rest }) {
+function Icon({ size,color="black", ...rest }) {
   return (
-    <i {...rest} style={{ fontSize: size }}></i>
+    <i {...rest} style={{ fontSize: size,color:color }}></i>
   )
 }
 

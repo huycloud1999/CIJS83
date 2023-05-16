@@ -1,6 +1,9 @@
 import React from "react";
-import styles from "./SignUp.module.css"
+import styles from "./SignUp.module.css";
+
+
 function SignUp({ toggleForm }) {
+
   return (
     <div className={styles["signup-container"]}>
       <h2>Sign Up</h2>

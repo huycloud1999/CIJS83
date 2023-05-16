@@ -14,7 +14,7 @@
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid red;
+    border: none;
     padding: 10px 12px;
     color: #fff;
     margin-right: 12px;

@@ -32,7 +32,6 @@ function App() {
             width: "10%",
             position: "fixed",
             height: "100%",
-            overflow: "auto",
           }}
         >
           <Navbar />

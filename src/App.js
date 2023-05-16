@@ -46,12 +46,12 @@ function App() {
             marginLeft: "10%",
             // paddingTop: "5%",
             color: "white",
-            backgroundColor: "#1e1e1e",
+            backgroundColor: "#16161a",
           }}
         >
           <div
             style={{
-              backgroundColor: "#111111",
+              backgroundColor: "#16161a",
               height: "10%",
               position: "fixed",
               top: 0,
@@ -60,7 +60,7 @@ function App() {
           >
             <Header />
           </div>
-          <div style={{ marginTop: "5%", padding: '20px', backgroundColor: "#1e1e1e", }}>
+          <div style={{ marginTop: "5%", padding: '20px', backgroundColor: "#16161a", }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />

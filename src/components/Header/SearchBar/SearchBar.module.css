@@ -3,7 +3,7 @@
     border-radius: 30px;
     padding: 12px;
     background-color: #7f5af0;
-    margin: 12px;
+    margin: 30px 12px;
 }
 
 .searchBox:hover > .searchText {
@@ -22,8 +22,8 @@
     height: 30px;
     border-radius: 50%;
     display: flex;
-    color: white;
-    background-color: red;
+    color: #fffffe;
+    background-color: #7f5af0;
     justify-content: center;
     align-items: center;
     cursor: pointer;

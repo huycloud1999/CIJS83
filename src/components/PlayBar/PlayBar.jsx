@@ -1,8 +1,10 @@
 import React from 'react'
-
+import styles from './PlayBar.module.css'
 function PlayBar() {
   return (
-    <div>PlayBar</div>
+    <div className={styles["playBar-container"]}>
+      <p>PlayBar</p>
+</div>
   )
 }
 

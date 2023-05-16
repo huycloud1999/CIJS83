@@ -1,0 +1,24 @@
+.NavBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fffffe;
+    height: 100%;
+    position: relative;
+}
+
+.NavIcons {
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.NavBtn {
+    color: #fffffe;
+    background-color: #7f5af0;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+}

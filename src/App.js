@@ -1,16 +1,17 @@
+import Background from './public/image/azurlane.jpg';
 import Navbar from "./components/Navbar/Navbar";
 import PlayBar from "./components/PlayBar/PlayBar";
 import Header from "./components/Header/Header";
 import SlidingForm from "./components/SlidingForm/SlidingForm";
 import SignIn from "./components/SignIn/SignIn";
+import Main from './components/Main/Main';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BTCK from "./BTCK";
-
-
 import Podcast from "./components/Podcast/Podcast";
 import Home from "./components/Home/Home";
 import Artisist from "./components/Artis/Artisist";
 import Library from "./components/Librarycom/Library";
+
 function App() {
   return (
     <div>
@@ -44,12 +45,12 @@ function App() {
             marginLeft: "10%",
             // paddingTop: "5%",
             color: "white",
-            backgroundColor: "#1e1e1e",
+            backgroundColor: "#16161a",
           }}
         >
           <div
             style={{
-              backgroundColor: "#111111",
+              backgroundColor: "#16161a",
               height: "10%",
               position: "fixed",
               top: 0,
@@ -58,7 +59,7 @@ function App() {
           >
             <Header />
           </div>
-          <div style={{ marginTop: "5%",padding:'20px',backgroundColor: "#1e1e1e", }}>
+          <div style={{ marginTop: "5%", padding: '20px', backgroundColor: "#16161a", }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
@@ -69,19 +70,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div
-        className="playBar"
-        style={{
-          display:'none',
-          backgroundColor: "pink",
-          width: "100vw",
-          height: "10%",
-          position: "fixed",
-          bottom: 0,
-        }}
-      >
+      <div className="playBar" style={{ backgroundColor: "pink", width: "100vw", height: "10%", position: "fixed", bottom: 0 }}>
         <PlayBar />
       </div>
+      {/* <SlidingForm /> */}
     </div>
   );
 }

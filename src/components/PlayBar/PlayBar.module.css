@@ -1,0 +1,11 @@
+.playBar-container  {
+    max-height: 100%;
+    height: 100%;
+     background-image: url("https://c4.wallpaperflare.com/wallpaper/560/855/635/spy-x-family-anya-forger-hd-wallpaper-preview.jpg");
+     background-size:contain;
+     background-repeat: repeat;
+  
+}
+.playBar-container p{
+   color: white;
+}

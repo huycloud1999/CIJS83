@@ -3,7 +3,8 @@
     border-radius: 30px;
     padding: 12px;
     background-color: #7f5af0;
-    margin: 30px 12px;
+    margin: 20px 12px;
+    margin-left: 20px;
 }
 
 .searchBox:hover > .searchText {
@@ -12,8 +13,8 @@
 }
 
 .searchBox:hover > .searchBtn {
-    background-color: #fffffe;
-    color: #7f5af0;
+    background-color:#070700;
+    color: #f7f7f7;
 }
 
 .searchBtn {
@@ -41,7 +42,6 @@
     line-height:30px;
     width: 0px;
 }
-
 .searchText::placeholder {
     color: #fffffe;
 }

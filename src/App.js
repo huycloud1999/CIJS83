@@ -45,12 +45,12 @@ function App() {
             marginLeft: "10%",
             // paddingTop: "5%",
             color: "white",
-            backgroundColor: "#16161a",
+            backgroundColor: "#101010",
           }}
         >
           <div
             style={{
-              backgroundColor: "#16161a",
+              backgroundColor: "#101010",
               height: "10%",
               position: "fixed",
               top: 0,
@@ -70,7 +70,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="playBar" style={{ backgroundColor: "pink", width: "100vw", height: "10%", position: "fixed", bottom: 0 }}>
+      <div className="playBar" style={{ width: "100vw", height: "10%", position: "fixed", bottom: 0 }}>
         <PlayBar />
       </div>
       {/* <SlidingForm /> */}

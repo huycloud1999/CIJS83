@@ -33,7 +33,7 @@ function Navbar() {
         <li>
           <NavLink to="/podcast" className="nav-link" style={{textDecoration:'none'}}>
           <i class="fa-solid fa-radio"></i>
-          <span>Postcasst</span>
+          <span>Podcast</span>
           </NavLink>
         </li>
       </ul>

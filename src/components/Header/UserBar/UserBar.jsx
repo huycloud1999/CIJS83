@@ -8,8 +8,8 @@ function UserBar() {
             <button className={styles.userBtn}>
                 <Icon><i class="fa-sharp fa-solid fa-user" aria-hidden='true' style={{ fontSize: 24 }}></i></Icon>
             </button>
-            <button className={styles.interactBtn1}>Sign In</button>
-            <button className={styles.interactBtn2}>Sign Out</button>
+            <button className={styles.interactBtn1}>Log In</button>
+            <button className={styles.interactBtn2}>Sign Up</button>
         </div>
     )
 }

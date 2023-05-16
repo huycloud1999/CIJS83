@@ -1,4 +1,6 @@
 import React from 'react'
+import styles from './Navbar.module.css'
+import Icon from '../../shared/Icon'
 import { useNavigate, NavLink } from 'react-router-dom';
 function Navbar() {
 

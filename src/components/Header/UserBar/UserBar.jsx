@@ -7,7 +7,11 @@ function UserBar() {
     const navigate = useNavigate();
     const handleSignIN =()=>{
         
-        navigate('/Signin')
+        navigate('signin')
+    }
+    const handleSignUP =()=>{
+        
+        navigate('signup')
     }
     return (
         <div className={styles.userBar}>
@@ -15,7 +19,7 @@ function UserBar() {
                 <Icon><i class="fa-sharp fa-solid fa-user" aria-hidden='true' style={{ fontSize: 24 }}></i></Icon>
             </button>
             <button className={styles.interactBtn1} onClick={handleSignIN}>Sign In</button>
-            <button className={styles.interactBtn2}>Sign Up</button>
+            <button className={styles.interactBtn2} onClick={handleSignUP}>Sign Up</button>
         </div>
     )
 }

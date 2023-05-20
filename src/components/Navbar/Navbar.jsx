@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
+import Logo from '../image/logo.jpg'
 import Icon from '../../shared/Icon'
 import { useNavigate, NavLink } from 'react-router-dom';
 function Navbar() {
@@ -8,7 +9,13 @@ function Navbar() {
   return (
     <div className={styles["navbar-container"]}>
       <div >
-        <img  src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30144742/417.png" alt=""style={{maxWidth:'100%',width:'100%'}}/>
+        <img src={Logo} alt=""
+          style={{ 
+            maxWidth: '100%', 
+            width: '60%',
+            marginLeft: '24px', 
+          }}
+        />
       </div>
       <div>
       <ul>
@@ -38,7 +45,7 @@ function Navbar() {
         </li>
       </ul>
       </div>
-      
+
     </div>
   )
 }

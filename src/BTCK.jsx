@@ -44,12 +44,13 @@ function BTCK() {
             position: "fixed",
             top: 0,
             width: "100%",
+            zIndex:"1"
           }}
         >
          
          <Header/>
        </div>
-        <div style={{ marginTop: "7%",minHeight:'100vh', backgroundColor: "#16161a" }}>
+        <div style={{ marginTop: "5%", backgroundColor: "#16161a",}}>
           <Outlet></Outlet>
      </div>
        </div>

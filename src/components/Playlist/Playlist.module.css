@@ -24,6 +24,7 @@
 .playlist {
   background-color: #16161a;
   padding-bottom: 0;
+  padding-bottom: 6%;
 }
 .headerPlaylist h1 {
   font-size: 70px;

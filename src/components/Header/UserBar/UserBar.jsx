@@ -7,11 +7,11 @@ function UserBar() {
     const navigate = useNavigate();
     const handleSignIN =()=>{
         
-        navigate('signin')
+        navigate('/signin')
     }
     const handleSignUP =()=>{
         
-        navigate('signup')
+        navigate('/signup')
     }
     return (
         <div className={styles.userBar}>

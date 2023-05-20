@@ -7,13 +7,15 @@
     margin-left: 20px;
 }
 
-.searchBox:hover > .searchText {
+.searchBox:hover > .searchText,
+.searchBox .searchText:focus {
     width: 200px;
     padding: 0 8px;
+    color: #fffffe;
 }
 
 .searchBox:hover > .searchBtn {
-    background-color:#070700;
+    /* background-color:#070700; */
     color: #f7f7f7;
 }
 

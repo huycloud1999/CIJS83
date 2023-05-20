@@ -1,8 +1,13 @@
 import React from "react";
 import styles from "./SignUp.module.css";
+import { useNavigate } from "react-router-dom";
 
-
-function SignUp({ toggleForm }) {
+function SignUp() {
+  const navigate = useNavigate();
+  const handleSignIN =()=>{
+      
+      navigate('/signin')
+  }
 
   return (
     <div className={styles["signup-container"]}>
@@ -22,7 +27,7 @@ function SignUp({ toggleForm }) {
 
       <p>
         Already have an account?{" "}
-        <span onClick={toggleForm}>Sign In</span>
+        <span onClick={handleSignIN}>Sign In</span>
       </p>
     </div>
   );

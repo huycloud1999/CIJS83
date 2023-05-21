@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 function Library() {
   const navigate = useNavigate();
-const handleClick =()=>{
-  navigate('/playlist')
-}
+  const handleClick = () => {
+    navigate('/playlist')
+  }
   return (
     <div>
       <h1>Đây là library</h1>
-        <button onClick={handleClick}>chill</button>
+      <button onClick={handleClick}>chill</button>
     </div>
   )
 }

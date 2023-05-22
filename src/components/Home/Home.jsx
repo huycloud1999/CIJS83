@@ -9,6 +9,7 @@ import TopAlbum from "./TopAlbum";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import NewReleaseCard from "./NewReleaseCard";
+import Image from 'react-bootstrap/Image'
 
 
 function Home() {
@@ -19,12 +20,17 @@ function Home() {
 
       <div style={{ height: '100%', display: 'flex' }}>
         <div style={{ width: '50%' }}>
-          <img
+          {/* <img
             src={JazzAlbum}
             alt=""
             style={{
               width: '100%',
             }}
+          /> */}
+          <Image
+            src={JazzAlbum}
+            fluid
+            width='100%'
           />
         </div>
         <div style={{

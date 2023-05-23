@@ -16,7 +16,7 @@ function Library() {
         <div className={styles.libraryItem}>
           <div>
             <div className={styles.yourMusics}>
-              <button className={styles.playBtn}>
+              <button className={styles.playBtn} onClick={handleClick}>
                 <i class="fa-solid fa-play"></i>
               </button>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import ItemLibrary from './ItemLibrary/ItemLibrary';
+import AddItemLibrary from './addItemLibrary/AddItemLibrary';
 
 function Library() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const handleClick =()=>{
       <ItemLibrary/>
       <ItemLibrary/>
       <ItemLibrary/>
+      <AddItemLibrary/>
     </div>
   )
 }

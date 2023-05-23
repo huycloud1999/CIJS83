@@ -7,10 +7,10 @@
   font-family:Arial, Helvetica, sans-serif ;
 }
 .itemlibrary img {
-  height: 234px;
-  width: 213px;
-
+  height: 100%;
+  width: 100%;
   transition: transform 0.3s ease;
+
 }
 
 .itemlibrary h4 {
@@ -56,6 +56,12 @@
   opacity: 0;
   box-shadow: rgba(253, 253, 253, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
+.itemlibrary i:hover{
+  scale: 1.2;
+  transition: ease-in-out 0.15s;
+  box-shadow: 0 0 10px 0 #1ed760 inset, 0 0 20px 2px #1ed760;
+  bottom: 20px;
+}
 
 .itemlibrary:hover i {
   opacity: 1;
@@ -64,6 +70,7 @@
 }
 .itemlibrary:hover {
   cursor: pointer;
+  
 }
 .itemlibrary:hover img {
   transform: scale(1.5);

@@ -10,7 +10,7 @@ function ItemLibrary() {
   return (
 
     <div className={styles['itemlibrary']} onClick={handleclick} >
-        <img src="https://e1.pxfuel.com/desktop-wallpaper/103/765/desktop-wallpaper-phone-celular-simple-heart-symbol-black-backgrounds-background-black-c.jpg" alt="" />
+        <img src="https://c4.wallpaperflare.com/wallpaper/650/266/335/anime-girls-shark-virtual-youtuber-gawr-gura-anime-hd-wallpaper-preview.jpg" alt="" />
      
         <h4>Liked Song</h4>
         <p>by Huypro9x</p>

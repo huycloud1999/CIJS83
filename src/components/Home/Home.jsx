@@ -13,7 +13,7 @@ function Home() {
 
   return (
 
-    <div>
+    <div style={{padding:'30px'}}>
 
       <div style={{ height: '100%', display: 'flex' }}>
         <div style={{ width: '50%' }}>

@@ -8,7 +8,9 @@ const handleClick =()=>{
   navigate('/playlist')
 }
   return (
-    <div style={{paddingTop:'30px',paddingLeft:'30px',minHeight:'80vh'}}>
+    <div style={{paddingTop:'30px',paddingLeft:'30px',minHeight:'80vh',display:'flex',gap:'20px'}}>
+      <ItemLibrary/>
+      <ItemLibrary/>
       <ItemLibrary/>
     </div>
   )

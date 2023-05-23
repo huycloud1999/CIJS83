@@ -9,17 +9,16 @@
 
 .userBtn {
     position: relative;
+    color: #ffffff;
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
     border: none;
     padding: 10px 12px;
-    color: #fff;
     margin-right: 12px;
     transition: ease-out 0.5s;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
-    background: #ffffff;
     box-shadow: inset 0 0 0 50px #7f5af0;
 }
 
@@ -31,22 +30,6 @@
 
 .interactBtn1,
 .interactBtn2 {
-    /* position: relative;
-    display: inline-block;
-    margin: 12px;
-    padding: 12px 24px;
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #ffffff;
-    background: #7f5af0;
-    border: none;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    -webkit-transition: ease-out 0.5s;
-    -moz-transition: ease-out 0.5s;
-    border-radius: 16px; */
     cursor: pointer;
     clear: both;
     border-radius: 16px;

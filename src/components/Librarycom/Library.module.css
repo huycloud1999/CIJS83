@@ -1,0 +1,66 @@
+h1 {
+    padding-top: 28px;
+}
+
+.libraryContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.libraryItem {
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.playBtn {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #7f5af0;
+    padding: 16px 20px 12px 24px;
+    font-size: 40px;
+    color: #fffffe;
+    opacity: 0;
+}
+
+.playBtn:hover {
+    scale: 1.1;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.libraryItem:hover .playBtn {
+    cursor: pointer;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.libraryItem:hover {
+    cursor: pointer;
+    background-color: rgb(40, 40, 40);
+}
+
+.yourMusics {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.yourAlbums {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.yourPodcasts {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+.yourAlbums, .yourMusics, .yourPodcasts {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}

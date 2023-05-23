@@ -7,7 +7,7 @@ function SearchBar() {
         <div className={styles.searchBox}>
             <input type="text" placeholder='Search...' className={styles.searchText} />
             <button type='submit' className={styles.searchBtn}>
-                <Icon><i class="fa-sharp fa-solid fa-magnifying-glass" aria-hidden='true' style={{ fontSize: 16,color: 'white' }}></i></Icon>
+                <Icon><i class="fa-sharp fa-solid fa-magnifying-glass" aria-hidden='true' style={{ fontSize: 16, color: '#fffffe' }}></i></Icon>
             </button>
         </div>
     )

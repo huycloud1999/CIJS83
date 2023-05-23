@@ -3,7 +3,10 @@ import styles from "./ItemOfList.module.css"
 function ItemOfList() {
   return (
     <div className={styles["ItemList"]}>
-            <div className={styles["gridItem"]}>1</div>
+            <div className={styles["gridItem"]}>
+                <span className={styles["ordinalNumber"]}>1</span>
+                <i class="fa-solid fa-play"></i>
+            </div>
             <div className={styles["gridItem"]}>
                 <div style={{display:'flex',alignItems:'center'}}>
                     <img src="https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/4/27/img6027-16826061072631364981444.jpg" alt=""/>

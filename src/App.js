@@ -1,4 +1,4 @@
-import Background from "./public/image/azurlane.jpg";
+
 import Navbar from "./components/Navbar/Navbar";
 import PlayBar from "./components/PlayBar/PlayBar";
 import Header from "./components/Header/Header";

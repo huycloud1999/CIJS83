@@ -16,25 +16,7 @@ function Artisist() {
         <ArtistsItem />
         <ArtistsItem />
         <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
-        <ArtistsItem />
+        
       </div>
     </div>
   )

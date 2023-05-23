@@ -16,7 +16,7 @@ function Home() {
 
   return (
 
-    <div>
+    <div style={{padding:'30px',paddingBottom:'5%'}}>
 
       <div style={{ height: '100%', display: 'flex' }}>
         <div style={{ width: '50%' }}>
@@ -49,6 +49,45 @@ function Home() {
 
       <div className={styles.newRelease}>
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>New Releases</h2>
+        <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+        </div>
+      </div>
+      <div className={styles.newRelease}>
+        <h2 style={{ marginTop: 24, marginBottom: 12 }}>Hip to the Hop</h2>
+        <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+        </div>
+      </div>
+      <div className={styles.newRelease}>
+        <h2 style={{ marginTop: 24, marginBottom: 12 }}>PoP</h2>
+        <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+          <NewReleaseCard />
+        </div>
+      </div>
+      <div className={styles.newRelease}>
+        <h2 style={{ marginTop: 24, marginBottom: 12 }}>Recommend for you</h2>
         <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
           <NewReleaseCard />
           <NewReleaseCard />

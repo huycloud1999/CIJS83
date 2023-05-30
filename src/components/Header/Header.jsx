@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import SearchBar from './SearchBar/SearchBar';
 import UserBar from './UserBar/UserBar';
+import BackForward from './BackAndForwardbtn/BackForward';
 function Header() {
 
     
@@ -11,7 +12,9 @@ function Header() {
     <div style={{display:'flex',justifyContent:'space-between',width:'90%',alignItems:'center'}}>
       <div>
         <SearchBar/>
+       
       </div>
+      <BackForward/>
       <div>
         <UserBar/>
       </div>

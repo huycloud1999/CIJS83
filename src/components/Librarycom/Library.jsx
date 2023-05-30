@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import ItemLibrary from './ItemLibrary/ItemLibrary';
+import AddItemLibrary from './addItemLibrary/AddItemLibrary';
 
 function Library() {
   const navigate = useNavigate();
@@ -8,10 +9,11 @@ function Library() {
     navigate('/playlist')
   }
   return (
-    <div style={{ paddingTop: '30px', paddingLeft: '30px', minHeight: '80vh', display: 'flex', gap: '20px' }}>
-      <ItemLibrary />
-      <ItemLibrary />
-      <ItemLibrary />
+    <div style={{paddingTop:'30px',paddingLeft:'30px',minHeight:'80vh',display:'flex',gap:'20px'}}>
+      <ItemLibrary/>
+      <ItemLibrary/>
+      <ItemLibrary/>
+      <AddItemLibrary/>
     </div>
   )
 }

@@ -7,16 +7,16 @@ import UserBar from './UserBar/UserBar';
 import BackForward from './BackAndForwardbtn/BackForward';
 function Header() {
 
-    
+
   return (
-    <div style={{display:'flex',justifyContent:'space-between',width:'90%',alignItems:'center'}}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', width: '90%', alignItems: 'center' }}>
       <div>
-        <SearchBar/>
-       
+        <SearchBar />
+
       </div>
-      <BackForward/>
+      {/* <BackForward /> */}
       <div>
-        <UserBar/>
+        <UserBar />
       </div>
     </div>
   )

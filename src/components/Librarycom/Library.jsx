@@ -9,11 +9,11 @@ function Library() {
     navigate('/playlist')
   }
   return (
-    <div style={{paddingTop:'30px',paddingLeft:'30px',minHeight:'80vh',display:'flex',gap:'20px'}}>
-      <ItemLibrary/>
-      <ItemLibrary/>
-      <ItemLibrary/>
-      <AddItemLibrary/>
+    <div style={{ paddingTop: '30px', paddingLeft: '30px', minHeight: '80vh', display: 'flex', gap: '20px' }}>
+      <ItemLibrary />
+      <ItemLibrary />
+      <ItemLibrary />
+      <AddItemLibrary />
     </div>
   )
 }

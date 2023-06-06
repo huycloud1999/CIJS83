@@ -18,7 +18,7 @@ function Podcast() {
   ];
 
   const handlePlayEpisode = (episodeId) => {
-    // Code để phát nhạc của tập đang chọn
+    
     console.log('Playing episode', episodeId);
   };
 

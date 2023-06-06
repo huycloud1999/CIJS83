@@ -4,8 +4,9 @@
   width: 213px;
   overflow: hidden;
   border-radius: 20px;
-  font-family:Arial, Helvetica, sans-serif ;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .itemlibrary img {
   height: 100%;
   width: 100%;
@@ -19,6 +20,7 @@
   bottom: 20px;
   font-size: 20px;
 }
+
 .itemlibrary p {
   position: absolute;
   left: 10px;
@@ -26,6 +28,7 @@
   font-size: 14px;
   padding: 0;
 }
+
 .itemlibrary span {
   position: absolute;
   left: 10px;
@@ -33,12 +36,14 @@
   font-size: 14px;
   opacity: 0;
 }
+
 .itemlibrary:hover span {
   opacity: 1;
   bottom: 20px;
   transition: ease-in-out 0.5s;
   font-style: italic;
 }
+
 .itemlibrary:hover p {
   opacity: 0;
   transition: ease-in-out 0.5s;
@@ -57,7 +62,7 @@
   box-shadow: rgba(253, 253, 253, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
 .itemlibrary i:hover{
-  scale: 1.2;
+  scale: 1.4;
   transition: ease-in-out 0.15s;
   box-shadow: 0 0 10px 0 #1ed760 inset, 0 0 20px 2px #1ed760;
   bottom: 20px;
@@ -68,10 +73,12 @@
   transition: ease-in-out 0.5s;
   bottom: 20px;
 }
+
 .itemlibrary:hover {
   cursor: pointer;
   
 }
+
 .itemlibrary:hover img {
   transform: scale(1.5);
 }

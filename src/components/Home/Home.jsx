@@ -7,7 +7,7 @@ import StarBoy from '../image/starboy.jpg';
 import BongHoa from '../image/bonghoa.jpg';
 import TopAlbum from "./TopAlbum";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NewReleaseCard from "./NewReleaseCard";
 import Image from 'react-bootstrap/Image'
 
@@ -16,10 +16,10 @@ function Home() {
 
   return (
 
-    <div style={{padding:'30px',paddingBottom:'5%'}}>
+    <div style={{ padding: '30px', paddingBottom: '5%' }}>
 
       <div style={{ height: '100%', display: 'flex' }}>
-        <div style={{ width: '50%' }}>
+        <div style={{ width: '50%', cursor: 'pointer' }}>
           {/* <img
             src={JazzAlbum}
             alt=""
@@ -34,15 +34,16 @@ function Home() {
           />
         </div>
         <div style={{
-          paddingLeft: 32
+          paddingLeft: 32,
+          width: '50%'
         }}>
 
           <h2 style={{ paddingLeft: 36, margin: 0 }}>Top Albums</h2>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 12 }}>
+          <div style={{ marginTop: 12 }}>
             <TopAlbum />
-            <TopAlbum />
-            <TopAlbum />
+            {/* <TopAlbum />
+            <TopAlbum /> */}
           </div>
         </div>
       </div>
@@ -51,25 +52,11 @@ function Home() {
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>New Releases</h2>
         <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
           <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
         </div>
       </div>
       <div className={styles.newRelease}>
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>Hip to the Hop</h2>
         <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
           <NewReleaseCard />
         </div>
       </div>
@@ -77,25 +64,11 @@ function Home() {
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>PoP</h2>
         <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
           <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
         </div>
       </div>
       <div className={styles.newRelease}>
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>Recommend for you</h2>
         <div style={{ display: "flex", width: "100%", overflowX: "auto", gap: 64, whiteSpace: "nowrap" }}>
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
-          <NewReleaseCard />
           <NewReleaseCard />
         </div>
       </div>

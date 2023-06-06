@@ -14,7 +14,7 @@ function Header() {
         <SearchBar />
 
       </div>
-      <BackForward/>
+      {/* <BackForward/> */}
       <div>
         <UserBar />
       </div>

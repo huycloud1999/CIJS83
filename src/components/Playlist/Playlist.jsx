@@ -2,22 +2,53 @@ import React from "react";
 import styles from "./Playlist.module.css";
 import IconSizeBigger from "../../shared/IconSizeBigger";
 import ItemOfList from "./ItemList/ItemOfList";
-
+import { useContext } from "react";
+import { MusicContext } from "../../MusicContext";
+import { useLocation, useParams } from "react-router-dom";
+import { useState } from "react";
 function Playlist() {
+  const location = useLocation();
+  const artist = location.state;
+  const { setCurrentSong } = useContext(MusicContext);
+  const [activeItem, setActiveItem] = useState(null);
+  const handleItemClick = (song) => {
+    setCurrentSong(song);
+    setActiveItem(song.ordinalNumber);
+  };
+  function convertTimeToSeconds(time) {
+    const [minutes, seconds] = time.split(":").map(Number);
+    return minutes * 60 + seconds;
+  }
+
+  function formatDuration(durationInSeconds) {
+    const hours = Math.floor(durationInSeconds / 3600);
+    const minutes = Math.floor((durationInSeconds % 3600) / 60);
+    return `${hours} hr ${minutes} min`;
+  }
+
+  // Calculate the total number of songs
+  const totalSongs = Object.keys(artist.playList).length;
+
+  // Calculate the total duration of the playlist
+  const totalDuration = Object.values(artist.playList).reduce(
+    (total, song) => total + convertTimeToSeconds(song.time),
+    0
+  );
+
   return (
     <div className={styles["playlist"]}>
       <div className={styles["headerPlaylist"]}>
-        <img
-          src="https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/4/27/img6027-16826061072631364981444.jpg"
-          alt=""
-        />
+        <img src={artist.imgArt} alt="" />
         <div>
           <h4>Playlist</h4>
-          <h1>G-Dragon VietNam</h1>
+          <h1>{artist.nameArt}</h1>
           <p>
-            Những bản nhạc hay nhất của kẻ hủy diệt âm nhạc G-dragon VietNam
+            Những bản nhạc hay nhất của kẻ hủy diệt âm nhạc {artist.nameArt}
           </p>
-          <p>7,041,414 likes,304 songs, about 11 hr</p>
+          <p>
+            {" "}
+            {totalSongs} songs, about {formatDuration(totalDuration)}
+          </p>
         </div>
       </div>
       <div className={styles["playlistButton"]}>
@@ -25,52 +56,37 @@ function Playlist() {
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-ellipsis"></i>
       </div>
-      <div className="contentSpacing" >
-      
-          <div className={styles["tableList"]}>
-            <div className="gridItem">#</div>
-            <div className="gridItem">Title</div>
-            <div className="gridItem">Album</div>
-            <div className="gridItem">Date added</div>
-            <div className="gridItem"><i class="fa-regular fa-clock" style={{fontSize:'14px',color:'black'}}></i></div>
+      <div className="contentSpacing">
+        <div className={styles["tableList"]}>
+          <div className="gridItem">#</div>
+          <div className="gridItem">Title</div>
+          <div className="gridItem">Album</div>
+          <div className="gridItem">Date added</div>
+          <div className="gridItem">
+            <i
+              class="fa-regular fa-clock"
+              style={{ fontSize: "14px", color: "black" }}
+            ></i>
+          </div>
         </div>
-        <div className={styles["ListItem"]}>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
-        <ItemOfList/>
+        <div className={styles.ListItem}>
+          {Object.entries(artist.playList).map(([songKey, song]) => (
+            <ItemOfList
+              key={songKey}
+              ordinalNumber={songKey.substring(4)}
+              imgMusic={song.imgMusic}
+              nameMusic={song.nameMusic}
+              nameArt={artist.nameArt}
+              nameAlbum={song.nameAlbum}
+              dateAdd={song.dateAdd}
+              time={song.time}
+              linkMp3={song.linkMp3}
+              isActive={activeItem === songKey.substring(4)}
+              onItemClick={handleItemClick}
+            />
+          ))}
         </div>
-        <div>
-
-        </div>
+        <div></div>
       </div>
     </div>
   );

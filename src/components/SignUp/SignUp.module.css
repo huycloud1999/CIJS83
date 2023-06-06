@@ -4,13 +4,15 @@
   padding: 20px;
   background-color: #f2f2f2;
   border-radius: 4px;
-  margin-top: 200px;
+  margin-top: 300px;
   border-radius: 20px;
   background: transparent;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    position: relative;
 }
 
 .signup-container h2 {
@@ -18,11 +20,11 @@
   margin-bottom: 20px;
 }
 
-.signup-container form {
-  display: flex;
-  flex-direction: column;
-}
 
+.signup-container span {
+  margin-bottom: 10px;
+  color: red;
+}
 .signup-container label {
   margin-bottom: 8px;
   font-weight: bold;
@@ -30,7 +32,7 @@
 
 .signup-container input {
   padding: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
   border: 1px solid #ccc;
   border-radius: 20px;
   padding: 10px;
@@ -49,14 +51,13 @@
 }
 
 .signup-container button:hover {
-  background: #1D2B64;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #1D2B64;  
+  background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64); 
+  background: linear-gradient(to right, #F8CDDA, #1D2B64); 
   transition: ease-in-out 1s;
 }
 
-.signup-container p {
+.signup-container p { 
   margin-top: 16px;
   font-size: 14px;
   text-align: center;
@@ -69,4 +70,15 @@
 
 .signup-container p span:hover {
   text-decoration: underline;
+}
+.signupErr {
+  background-color:  red;
+ width: 300px;
+  font-size: 16px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px; 
+  right: 41%;
 }

@@ -4,7 +4,7 @@ import Logo from '../image/logo.jpg'
 import Icon from '../../shared/Icon'
 import { useNavigate, NavLink } from 'react-router-dom';
 function Navbar() {
-
+  const navigate = useNavigate();
 
   return (
     <div className={styles["navbar-container"]}>
@@ -13,8 +13,9 @@ function Navbar() {
           style={{ 
             maxWidth: '100%', 
             width: '60%',
-            marginLeft: '24px', 
-          }}
+            marginLeft: '24px',
+            cursor:'pointer' 
+          } }  onClick={() => navigate("/home")}
         />
       </div>
       <div>

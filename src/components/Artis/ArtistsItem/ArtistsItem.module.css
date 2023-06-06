@@ -25,6 +25,9 @@
     font-weight: 500;
     align-self: flex-start;
 }
+.artistsItem:hover span{
+    color: #7f5af0;
+}
 
 .artistsItem:hover {
     background-color: #333232;

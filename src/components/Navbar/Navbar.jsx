@@ -4,22 +4,19 @@ import Logo from '../image/logo.jpg'
 import Icon from '../../shared/Icon'
 import { useNavigate, NavLink } from 'react-router-dom';
 function Navbar() {
-
+  const navigate = useNavigate();
 
   return (
     <div className={styles["navbar-container"]}>
-      <NavLink to={'/home'} className="nav-link" style={{ textDecoration: 'none' }}>
-        <div >
-          <img src={Logo} alt=""
-            style={{
-              maxWidth: '100%',
-              width: '60%',
-              marginLeft: '24px',
-              cursor: 'pointer'
-            }}
-          />
-        </div>
-      </NavLink>
+      <div >
+        <img src={Logo} alt=""
+          style={{ 
+            maxWidth: '100%', 
+            width: '60%',
+            marginLeft: '24px', 
+          }}
+        />
+      </div>
       <div>
         <ul>
           <li>

@@ -12,10 +12,11 @@ import Artisist from "./components/Artis/Artisist";
 import Library from "./components/Librarycom/Library";
 import Playlist from "./components/Playlist/Playlist";
 import SignUp from "./components/SignUp/SignUp";
+import { MusicProvider } from "./MusicContext";
 
 function App() {
   return (
-    <>
+    <MusicProvider>
       <Routes>
         <Route path="/" element={<BTCK></BTCK>}>
           <Route path="/" element={<Home />}></Route>
@@ -28,7 +29,7 @@ function App() {
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp/>}></Route>
       </Routes>
-    </>
+    </MusicProvider>
   );
 }
 

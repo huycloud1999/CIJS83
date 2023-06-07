@@ -153,7 +153,7 @@ function PlayBar() {
             style={{
               width: `${inputWidth}px`,
               margin: "0 10px",
-              height: "5px"
+              height: "7px"
             }}
           />
 

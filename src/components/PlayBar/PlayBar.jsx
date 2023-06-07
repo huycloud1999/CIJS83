@@ -94,11 +94,13 @@ function PlayBar() {
     <div className={styles["playBar-container"]}>
       <div
         className="musicInfo"
-        style={{ display: "flex", alignItems: "center",width:'400px' }}
+        style={{ display: "flex", alignItems: "center", width: "400px" }}
       >
         <img src={currentSong.imgMusic} alt="Song Cover" />
         <div style={{ marginLeft: "20px", marginRight: "20px" }}>
-          <p  className={styles.fixedNameMusic} style={{ fontWeight: 600 }}>{currentSong.nameMusic}</p>
+          <p className={styles.fixedNameMusic} style={{ fontWeight: 600 }}>
+            {currentSong.nameMusic}
+          </p>
           <p style={{ fontSize: "14px" }}>{currentSong.nameArt}</p>
         </div>
         <IconSizeBigger className="fa-regular fa-heart" size="25px" />
@@ -117,7 +119,6 @@ function PlayBar() {
             alignItems: "center",
             justifyContent: "center",
             gap: "30px",
-
           }}
         >
           <IconSizeBigger className="fa-solid fa-step-backward" size="25px" />
@@ -141,20 +142,34 @@ function PlayBar() {
         <div
           style={{ display: "flex", alignItems: "center", marginTop: "10px" }}
         >
-          <span>{formatTime(currentTime)}</span>
+          <span style={{color:'white'}}>{formatTime(currentTime)}</span>
           <input
             type="range"
             min={0}
             max={duration}
             value={currentTime}
             onChange={handleSeek}
-            style={{ width: `${inputWidth}px`, margin: "0 10px" }}
+            className={styles.inputRange}
+            style={{
+              width: `${inputWidth}px`,
+              margin: "0 10px",
+              height: "7px"
+            }}
           />
-          <span>{formatTime(duration)}</span>
+
+          <span style={{color:'white'}}>{formatTime(duration)}</span>
         </div>
       </div>
-      <div style={{ display: "flex", alignItems: "center", marginTop: "10px",width:200 }}>
-        <i className={`fa-solid ${getVolumeIcon()}`} style={{ marginRight: "5px",fontSize:'20px',color:'white',width:20 }} />
+      <div className={styles.inputContainer} style={{ width: 200 }}>
+        <i
+          className={`fa-solid ${getVolumeIcon()}`}
+          style={{
+            marginRight: "5px",
+            fontSize: "20px",
+            color: "white",
+            width: 20,
+          }}
+        />
         <input
           type="range"
           min={0}
@@ -162,9 +177,18 @@ function PlayBar() {
           step={0.1}
           value={volume}
           onChange={handleVolumeChange}
-          style={{ width: "80px", margin: "0 10px" }}
+          className={styles.inputRange}
+          style={{ width: "80px", margin: "0 10px",height:'5px' }}
         />
-        <i class="fa-solid fa-bars" style={{ marginLeft: "10px",fontSize:'20px',color:'white',width:20 }}></i>
+        <i
+          className="fa-solid fa-bars"
+          style={{
+            marginLeft: "10px",
+            fontSize: "20px",
+            color: "white",
+            width: 20
+          }}
+        ></i>
       </div>
       {currentSong.linkMp3 && (
         <audio

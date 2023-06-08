@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import { Image } from 'react-bootstrap';
 import { MusicContext } from '../../MusicContext';
 import ItemOfList from '../Playlist/ItemList/ItemOfList';
+import { useContext } from 'react';
 
 async function fetchData() {
     try {
@@ -32,6 +33,13 @@ function NewReleaseCard() {
         fetchDataFromAPI();
     }, []);
 
+    const { setCurrentSong } = useContext(MusicContext);
+
+    const handlePlayMusic = (item) => {
+        console.log(item);
+        setCurrentSong(item);
+    };
+
     return (
         <div style={{ display: 'flex', gap: 32 }}>
             {musicData.map((item) => (
@@ -47,7 +55,10 @@ function NewReleaseCard() {
                     }}>
                         <Image src={item.imgMusic} fluid />
                     </div>
-                    <button className={styles.bigPlayBtn}>
+                    <button
+                        className={styles.bigPlayBtn}
+                        onClick={() => handlePlayMusic(item)}
+                    >
                         <i style={{ color: '#ffffff', fontSize: 24 }} className="fa-solid fa-play"></i>
                     </button>
                     <div className={styles.title}>

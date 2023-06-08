@@ -25,7 +25,7 @@ async function fetchData() {
     };
 };
 
-function TopAlbum({ albums }) {
+function TopAlbum() {
     const [albumData, setAlbumData] = useState([]);
     const navigate = useNavigate();
 
@@ -38,9 +38,10 @@ function TopAlbum({ albums }) {
         fetchDataFromAPI();
     }, []);
 
-    const handleClick = () => {
-        // navigate("/albumplaylist", { state: albums });
-        console.log(albumData);
+    const handleClick = (item) => {
+        const listAlbum = item.playList;
+        navigate("/albumplaylist", { state: item });
+        // console.log(listAlbum);
     };
 
     return (
@@ -75,7 +76,7 @@ function TopAlbum({ albums }) {
                         </div>
                     </div>
                     <div>
-                        <button className={styles.likeBtn} onClick={handleClick}>
+                        <button className={styles.likeBtn} onClick={() => handleClick(item)}>
                             <Icon><i class="fa-regular fa-heart" style={{ fontSize: 28 }}></i></Icon>
                         </button>
                     </div>

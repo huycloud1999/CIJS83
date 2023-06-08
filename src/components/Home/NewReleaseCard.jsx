@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Home.module.css';
 import { Image } from 'react-bootstrap';
+import { MusicContext } from '../../MusicContext';
+import ItemOfList from '../Playlist/ItemList/ItemOfList';
 
 async function fetchData() {
     try {
@@ -43,13 +45,13 @@ function NewReleaseCard() {
                         display: 'flex',
                         justifyContent: 'center'
                     }}>
-                        <Image src={item.image} fluid />
+                        <Image src={item.imgMusic} fluid />
                     </div>
                     <button className={styles.bigPlayBtn}>
                         <i style={{ color: '#ffffff', fontSize: 24 }} className="fa-solid fa-play"></i>
                     </button>
                     <div className={styles.title}>
-                        <h4>{item.title}</h4>
+                        <h4>{item.nameMusic}</h4>
                     </div>
                 </div>
             ))}

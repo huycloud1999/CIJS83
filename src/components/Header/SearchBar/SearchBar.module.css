@@ -1,49 +1,50 @@
 .searchBox {
-    height: 30px;
-    border-radius: 30px;
-    padding: 12px;
+    height          : 30px;
+    border-radius   : 30px;
+    padding         : 12px;
     background-color: #7f5af0;
-    margin: 20px 12px;
-    margin-left: 20px;
+    margin          : 20px 12px;
+    margin-left     : 20px;
 }
 
-.searchBox:hover > .searchText,
+.searchBox:hover>.searchText,
 .searchBox .searchText:focus {
-    width: 200px;
+    width  : 200px;
     padding: 0 8px;
-    color: #fffffe;
+    color  : #fffffe;
 }
 
-.searchBox:hover > .searchBtn {
+.searchBox:hover>.searchBtn {
     /* background-color:#070700; */
     color: #f7f7f7;
 }
 
 .searchBtn {
-    float: right;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    color: #fffffe;
+    float           : right;
+    width           : 30px;
+    height          : 30px;
+    border-radius   : 50%;
+    display         : flex;
+    color           : #fffffe;
     background-color: #7f5af0;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: #7f5af0;
+    justify-content : center;
+    align-items     : center;
+    cursor          : pointer;
+    border          : #7f5af0;
 }
 
 .searchText {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    font-size: 16px;
-    transition: 0.5s;
-    line-height:30px;
-    width: 0px;
+    border     : none;
+    background : none;
+    outline    : none;
+    float      : left;
+    padding    : 0;
+    font-size  : 16px;
+    transition : 0.5s;
+    line-height: 30px;
+    width      : 0px;
 }
+
 .searchText::placeholder {
     color: #fffffe;
 }

@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import BongHoa from '../image/bonghoa.jpg'
-import styles from './Home.module.css'
-import Icon from '../../shared/Icon'
-import { Image } from 'react-bootstrap'
+import ItemOfList from '../Playlist/ItemList/ItemOfList';
+import Playlist from '../Playlist/Playlist';
+import { useContext } from "react";
+import { MusicContext } from "../../MusicContext";
+import { useLocation, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import styles from './Home.module.css';
+import Icon from '../../shared/Icon';
+import { Image } from 'react-bootstrap';
 
 async function fetchData() {
     try {
@@ -20,8 +25,9 @@ async function fetchData() {
     };
 };
 
-function TopAlbum() {
+function TopAlbum({ albums }) {
     const [albumData, setAlbumData] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchDataFromAPI = async () => {
@@ -32,17 +38,29 @@ function TopAlbum() {
         fetchDataFromAPI();
     }, []);
 
+    const handleClick = () => {
+        // navigate("/albumplaylist", { state: albums });
+        console.log(albumData);
+    };
 
     return (
         <div className={styles.topAlbums}>
             {albumData.map((item) => (
-                <div key={item.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                <div
+                    key={item.id}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        width: '100%'
+                    }}
+                >
                     <div className={styles.topAlbumsImg}>
                         <Image
-                            src={item.image}
+                            src={item.imgArt}
                             fluid
                             style={{
-                                width: '120px',
+                                width: '100px',
                                 height: '100px',
                                 borderRadius: 8
                             }}
@@ -51,13 +69,13 @@ function TopAlbum() {
                             <i style={{ color: '#ffffff', fontSize: 16 }} class="fa-solid fa-play"></i>
                         </button>
                         <div className={styles.topAlbumsInfo}>
-                            <h3>{item.name}</h3>
-                            <p>{item.author}</p>
+                            <h3>{item.album}</h3>
+                            <p>{item.nameArt}</p>
                             <p>{item.length}</p>
                         </div>
                     </div>
                     <div>
-                        <button className={styles.likeBtn}>
+                        <button className={styles.likeBtn} onClick={handleClick}>
                             <Icon><i class="fa-regular fa-heart" style={{ fontSize: 28 }}></i></Icon>
                         </button>
                     </div>

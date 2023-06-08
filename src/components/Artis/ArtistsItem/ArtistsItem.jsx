@@ -15,7 +15,7 @@ function ArtistsItem({ artist }) {
         <img src={artist.imgArt} alt={artist.nameArt} />
         <i className="fa-solid fa-circle-play"></i>
       </div>
-      <span style={{textTransform:'capitalize'}}>{artist.nameArt}</span>
+      <span style={{ textTransform: 'capitalize' }}>{artist.nameArt}</span>
     </div>
   );
 }

@@ -8,15 +8,17 @@ function Navbar() {
 
   return (
     <div className={styles["navbar-container"]}>
-      <div >
-        <img src={Logo} alt=""
-          style={{ 
-            maxWidth: '100%', 
-            width: '60%',
-            marginLeft: '24px', 
-          }}
-        />
-      </div>
+      <NavLink to="/home" className="nav-link" style={{ textDecoration: 'none' }} >
+        <div >
+          <img src={Logo} alt=""
+            style={{
+              maxWidth: '100%',
+              width: '60%',
+              marginLeft: '24px',
+            }}
+          />
+        </div>
+      </NavLink>
       <div>
         <ul>
           <li>

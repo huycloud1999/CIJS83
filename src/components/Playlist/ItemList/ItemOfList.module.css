@@ -1,58 +1,60 @@
 .ItemList {
-  display: grid;
+  display              : grid;
   grid-template-columns: 5% 35% 25% 25% 10%;
-  grid-auto-rows: auto;
-  padding-left: 30px;
-  align-items: center;
-
-  cursor: pointer;
-margin-bottom: 10px;
+  grid-auto-rows       : auto;
+  padding-left         : 30px;
+  align-items          : center;
+  cursor               : pointer;
+  margin-bottom        : 10px;
 }
+
 .ItemList.active {
   box-shadow: rgba(255, 236, 236, 0.25) 0px 30px 60px -12px inset, rgba(189, 186, 186, 0.3) 0px 18px 36px -18px inset;
+}
 
-}
 .ItemList.active i {
- 
   display: inline;
-  color: #1ed760;
+  color  : #7f5af0;
 }
+
 .ItemList.active .ordinalNumber {
- 
   display: none;
 }
 
 .ItemList:hover .ordinalNumber {
   display: none;
 }
-.ItemList:hover i{
-  display: inline;
 
+.ItemList:hover i {
+  display: inline;
 }
-.ItemList:hover{
+
+.ItemList:hover {
   box-shadow: rgba(255, 236, 236, 0.25) 0px 30px 60px -12px inset, rgba(189, 186, 186, 0.3) 0px 18px 36px -18px inset;
 }
-.ItemList i{
-  display: none;
+
+.ItemList i {
+  display  : none;
   font-size: 16px;
 }
-.ItemList i:hover{
-  transform: scale(1.1);
-  transition: ease-in-out 0.15s;
-  color: #1ed760;
-  cursor: pointer;
-}
-.ordinalNumber{
-  opacity: 1;
 
+.ItemList i:hover {
+  transform : scale(1.1);
+  transition: ease-in-out 0.15s;
+  color     : #7f5af0;
+  cursor    : pointer;
 }
+
+.ordinalNumber {
+  opacity: 1;
+}
+
 .gridItem {
   max-height: 708px;
-
 }
 
 .ItemList .gridItem img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width    : 50px;
+  max-height   : 50px;
   border-radius: 4%;
 }

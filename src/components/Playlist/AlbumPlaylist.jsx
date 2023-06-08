@@ -32,7 +32,6 @@ function AlbumsPlaylist() {
         return `${hours} hr ${minutes} min`;
     };
 
-    // Calculate the total number of songs
     const totalSongs = Object.keys(item.playList).length;
 
     // Calculate the total duration of the playlist

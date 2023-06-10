@@ -31,6 +31,8 @@
     bottom: 0;
     right: 25px;
     opacity: 0;
+    border-radius: 50%;
+    box-shadow: rgba(70, 206, 111, 0.25) 0px 54px 55px,  rgba(70, 206, 111, 0.25) 0px -12px 30px,  rgba(70, 206, 111, 0.25) 0px 4px 6px,  rgba(70, 206, 111, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .PIContainer:hover{
     cursor: pointer;;
@@ -39,7 +41,7 @@
     font-size: 35px;
     color:forestgreen;
     position:absolute;
-    bottom: 20px;
+    bottom: 40%;
     right: 25px;
     opacity: 1;
     transition: ease-in-out 0.5s;
@@ -47,5 +49,5 @@
 .PIContainer i:hover{
     scale: 1.2;
     transition: ease-in-out 0.5s;
-    color: aliceblue;
+   
 }

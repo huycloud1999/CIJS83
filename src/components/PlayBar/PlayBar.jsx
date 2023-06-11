@@ -96,7 +96,7 @@ function PlayBar() {
       <div
         className="musicInfo"
         style={{ display: "flex", alignItems: "center", width: "400px" }}
-        style={{ display: "flex", alignItems: "center", width: '400px' }}
+     
       >
         <img src={currentSong.imgMusic} alt="Song Cover" />
         <div style={{ marginLeft: "20px", marginRight: "20px" }}>

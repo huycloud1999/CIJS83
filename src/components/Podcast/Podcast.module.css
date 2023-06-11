@@ -1,6 +1,7 @@
 /* Podcast.module.css */
 .container {
     padding: 5px 10px;
+    min-height: 100vh;
   }
   
   .podcastList {

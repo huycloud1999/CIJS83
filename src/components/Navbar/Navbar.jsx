@@ -1,70 +1,92 @@
-import React from 'react'
-import styles from "./Navbar.module.css"
-import Logo from '../image/logo.jpg'
-import Icon from '../../shared/Icon'
-import { useNavigate, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import styles from "./Navbar.module.css";
+import Logo from '../image/logo.jpg';
+import { NavLink } from 'react-router-dom';
 import DarkMode from '../DarkMode/DarkMode';
 
-function Navbar() {
-  const navigate = useNavigate();
+const Navbar = () => {
+  const [activeLink, setActiveLink] = useState('');
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
 
   return (
     <div className={styles["navbar-container"]}>
-      <NavLink to="/home" className="nav-link" style={{ textDecoration: 'none' }} >
+      <NavLink to="/home" className="nav-link" style={{ textDecoration: 'none', listStyleType: 'none' }}>
         <div style={{
-          color: 'var(--body_color)',
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: 40,
-          fontSize: 32,
-          marginBottom: 40
+          marginTop: 20,
+          fontSize: 40,
+          color: 'var(--button_color)',
+          marginBottom: 60
         }}>
-          {/* <img src={Logo} alt=""
+          <i class="fa-solid fa-music"></i>
+          {/* <img
+            src={Logo}
+            alt=""
             style={{
               maxWidth: '100%',
               width: '60%',
               marginLeft: '24px',
             }}
           /> */}
-          <i class="fa-solid fa-music"></i>
         </div>
-      </NavLink>
+      </NavLink >
       <div>
-        <ul style={{ color: 'var(--body_color)', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
-          <li>
-            <NavLink to="/home" className="nav-link" style={{ textDecoration: 'none' }} >
-              <i style={{ color: 'var(--body_color)' }} class="fa-solid fa-house-chimney"></i>
-              <span style={{ color: 'var(--body_color)' }}>Home</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/artists" className="nav-link" style={{ textDecoration: 'none' }}>
-              <i style={{ color: 'var(--body_color)' }} class="fa-brands fa-napster"></i>
-              <span style={{ color: 'var(--body_color)' }}>Artists</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/library" className="nav-link" style={{ textDecoration: 'none' }} >
-              <i style={{ color: 'var(--body_color)' }} class="fa-solid fa-record-vinyl"></i>
-              <span style={{ color: 'var(--body_color)' }}>Library</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/podcast" className="nav-link" style={{ textDecoration: 'none' }}>
-              <i style={{ color: 'var(--body_color)' }} class="fa-solid fa-radio"></i>
-              <span style={{ color: 'var(--body_color)' }}>Podcast</span>
-            </NavLink>
-          </li>
+        <ul style={{ listStyleType: 'none' }}>
+          <NavItem
+            to="/home"
+            icon="fa-house-chimney"
+            text="Home"
+            activeLink={activeLink}
+            handleLinkClick={handleLinkClick}
+          />
+          <NavItem
+            to="/artists"
+            icon="fa-brands fa-napster"
+            text="Artists"
+            activeLink={activeLink}
+            handleLinkClick={handleLinkClick}
+          />
+          <NavItem
+            to="/library"
+            icon="fa-record-vinyl"
+            text="Library"
+            activeLink={activeLink}
+            handleLinkClick={handleLinkClick}
+          />
+          <NavItem
+            to="/podcast"
+            icon="fa-radio"
+            text="Podcast"
+            activeLink={activeLink}
+            handleLinkClick={handleLinkClick}
+          />
+          <div style={{ marginTop: 320 }}>
+            <DarkMode />
+          </div>
         </ul>
-
-        <div className={styles.changeThemeBtn}>
-          <DarkMode />
-        </div>
-
       </div>
+    </div >
+  );
+};
 
-    </div>
-  )
-}
+const NavItem = ({ to, icon, text, activeLink, handleLinkClick }) => {
+  const isActive = activeLink === to;
 
-export default Navbar
+  return (
+    <li>
+      <NavLink
+        to={to}
+        className={`nav-link ${isActive ? styles.active : ''}`}
+        style={{ textDecoration: 'none' }}
+        onClick={() => handleLinkClick(to)}
+      >
+        <i className={`fa-solid ${icon} ${styles.icon}`}></i>
+        <span className={styles.text}>{text}</span>
+      </NavLink>
+    </li>
+  );
+};
+
+export default Navbar;

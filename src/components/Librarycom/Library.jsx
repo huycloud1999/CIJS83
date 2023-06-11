@@ -9,7 +9,7 @@ function Library() {
     navigate('/playlist')
   }
   return (
-    <div style={{ backgroundColor: 'var(--body_background)', paddingTop: '30px', paddingLeft: '30px', minHeight: '80vh', display: 'flex', gap: '20px' }}>
+    <div style={{ backgroundColor: 'var(--body_background)', paddingTop: '30px', paddingLeft: '30px', minHeight: '100vh', display: 'flex', gap: '20px' }}>
       <ItemLibrary />
       <ItemLibrary />
       <ItemLibrary />

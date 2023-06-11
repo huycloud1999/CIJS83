@@ -47,12 +47,12 @@ function AlbumsPlaylist() {
                 <img src={item.imgArt} alt="" />
                 <div>
                     <h1>{item.album}</h1>
-                    <p>
+                    <h3>
                         Sountrack mới nhất của {item.nameArt} cho Spider-Man: Across the Spider-verse
-                    </p>
-                    <p>
+                    </h3>
+                    <h4>
                         {totalSongs} songs, about {formatDuration(totalDuration)}
-                    </p>
+                    </h4>
                 </div>
             </div>
             <div className={styles["playlistButton"]}>

@@ -6,28 +6,26 @@ import { useContext } from "react";
 import { MusicContext } from "../../MusicContext";
 import { useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
-function Playlist() {
 
+function Playlist() {
   const location = useLocation();
   const artist = location.state;
   const { setCurrentSong } = useContext(MusicContext);
   const [activeItem, setActiveItem] = useState(null);
-
   const handleItemClick = (song) => {
     setCurrentSong(song);
     setActiveItem(song.ordinalNumber);
   };
-
   function convertTimeToSeconds(time) {
     const [minutes, seconds] = time.split(":").map(Number);
     return minutes * 60 + seconds;
-  };
+  }
 
   function formatDuration(durationInSeconds) {
     const hours = Math.floor(durationInSeconds / 3600);
     const minutes = Math.floor((durationInSeconds % 3600) / 60);
     return `${hours} hr ${minutes} min`;
-  };
+  }
 
   // Calculate the total number of songs
   const totalSongs = Object.keys(artist.playList).length;
@@ -44,12 +42,13 @@ function Playlist() {
         <img src={artist.imgArt} alt="" />
         <div>
           <h1>{artist.nameArt}</h1>
-          <p>
+          <h3>
             Những bản nhạc hay nhất của kẻ hủy diệt âm nhạc {artist.nameArt}
-          </p>
-          <p>
+          </h3>
+          <h4>
+            {" "}
             {totalSongs} songs, about {formatDuration(totalDuration)}
-          </p>
+          </h4>
         </div>
       </div>
       <div className={styles["playlistButton"]}>
@@ -59,14 +58,14 @@ function Playlist() {
       </div>
       <div className="contentSpacing">
         <div className={styles["tableList"]}>
-          <div className="gridItem">No.</div>
+          <div className="gridItem">#</div>
           <div className="gridItem">Title</div>
           <div className="gridItem">Album</div>
           <div className="gridItem">Date added</div>
           <div className="gridItem">
             <i
               class="fa-regular fa-clock"
-              style={{ fontSize: "20px", color: "#ffffff" }}
+              style={{ fontSize: "14px", color: "black" }}
             ></i>
           </div>
         </div>
@@ -87,6 +86,7 @@ function Playlist() {
             />
           ))}
         </div>
+        <div></div>
       </div>
     </div>
   );

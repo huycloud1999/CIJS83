@@ -1,24 +1,25 @@
-.additem{
-    height: 234px;
-    width: 213px;
-    border-radius:20px ;
-    box-shadow: rgba(174, 174, 177, 0.25) 0px 30px 60px -12px inset, rgba(174, 174, 177, 0.25)  0px 18px 36px -18px inset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .additem i {
-    font-size: 30px;
-    box-shadow: rgba(174, 174, 177, 0.25) 0px 30px 60px -12px inset, rgba(174, 174, 177, 0.25)  0px 18px 36px -18px inset;
-    border-radius: 50%;
-    padding: 15px;
-  
-  }
-  .additem:hover i {
-   transform: scale(1.2);
-   transition: ease-in-out 0.15s;
-   box-shadow: 0 0 5px 0 #ffffff inset, 0 0 10px 2px #ffffff;
+.additem {
+  height         : 234px;
+  width          : 213px;
+  border-radius  : 20px;
+  box-shadow     : rgba(174, 174, 177, 0.25) 0px 30px 60px -12px inset, rgba(174, 174, 177, 0.25) 0px 18px 36px -18px inset;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  cursor         : pointer;
+}
 
+.additem i {
+  font-size    : 30px;
+  box-shadow   : rgba(174, 174, 177, 0.25) 0px 30px 60px -12px inset, rgba(174, 174, 177, 0.25) 0px 18px 36px -18px inset;
+  border-radius: 50%;
+  padding      : 15px;
 
-  }
+}
+
+.additem:hover i {
+  transform : scale(1.2);
+  transition: ease-in-out 0.15s;
+  color     : var(--button_color);
+  box-shadow: 0 0 5px 0 var(--button_color) inset, 0 0 10px 2px var(--button_color);
+}

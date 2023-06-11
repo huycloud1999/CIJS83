@@ -1,51 +1,61 @@
 .PIContainer {
-    box-shadow: rgba(110, 110, 119, 0.25) 0px 30px 60px -12px inset, rgba(110, 110, 119, 0.25) 0px 18px 36px -18px inset;
-    width: 200px;
-    height: 280px;
-    display: flex;
+    box-shadow    : rgba(110, 110, 119, 0.25) 0px 30px 60px -12px inset, rgba(110, 110, 119, 0.25) 0px 18px 36px -18px inset;
+    width         : 200px;
+    height        : 280px;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
+    align-items   : center;
+    padding-top   : 10px;
     padding-bottom: 10px;
-    position: relative;
+    position      : relative;
+    border-radius : 5%;
+}
+
+.PIContainer img {
+    max-height   : 170px;
+    max-height   : 170px;
     border-radius: 5%;
 }
-.PIContainer img{
-    max-height: 170px;
-    max-height:170px;
-    border-radius: 5%;
+
+.PIContainer h4 {
+    width        : 170px;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
 }
-.PIContainer h4{
-    width: 170px; /* Đặt chiều rộng tùy ý cho phần tử chứa văn bản */
-  white-space: nowrap; /* Ngăn văn bản xuống dòng */
-  overflow: hidden; /* Ẩn phần văn bản vượt quá chiều rộng */
-  text-overflow: ellipsis; /* Hiển thị ba chấm khi văn bản bị ẩn */
-}
-.PIContent span{
+
+.PIContent span {
     font-size: 14px;
 }
-.PIContainer i{
-    font-size: 35px;
-    color:forestgreen;
-    position:absolute;
-    bottom: 0;
-    right: 25px;
-    opacity: 0;
+
+.PIContainer i {
+    font-size    : 48px;
+    color        : var(--button_color);
+    position     : absolute;
+    bottom       : 0;
+    right        : 25px;
+    opacity      : 0;
+    border-radius: 50%;
+    box-shadow   : rgba(70, 206, 111, 0.25) 0px 54px 55px, rgba(70, 206, 111, 0.25) 0px -12px 30px, rgba(70, 206, 111, 0.25) 0px 4px 6px, rgba(70, 206, 111, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.PIContainer:hover{
-    cursor: pointer;;
+
+.PIContainer:hover {
+    cursor: pointer;
+    ;
 }
-.PIContainer:hover i{
-    font-size: 35px;
-    color:forestgreen;
-    position:absolute;
-    bottom: 20px;
-    right: 25px;
-    opacity: 1;
+
+.PIContainer:hover i {
+    font-size : 48px;
+    color     : var(--button_color);
+    position  : absolute;
+    bottom    : 40%;
+    right     : 25px;
+    opacity   : 1;
     transition: ease-in-out 0.5s;
 }
-.PIContainer i:hover{
-    scale: 1.2;
+
+.PIContainer i:hover {
+    scale     : 1.2;
     transition: ease-in-out 0.5s;
-    color: aliceblue;
+
 }

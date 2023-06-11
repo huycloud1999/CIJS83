@@ -1,0 +1,15 @@
+/* Podcast.module.css */
+.container {
+  padding         : 5px 10px;
+  min-height      : 100vh;
+  background-color: var(--body_background);
+  color           : var(--body_color);
+}
+
+.podcastList {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  margin-left    : 20px;
+  margin-right   : 20px;
+}

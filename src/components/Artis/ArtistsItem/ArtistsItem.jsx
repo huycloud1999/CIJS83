@@ -6,7 +6,7 @@ function ArtistsItem({ artist }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/playlist", { state: artist });
+    navigate("/artis/playlist", { state: artist });
   };
 
   return (

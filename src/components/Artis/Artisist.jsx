@@ -12,6 +12,7 @@ function Artisist({ }) {
   }, []);
 
   return (
+<<<<<<< HEAD
     <div style={{ backgroundColor: 'var(--body_background)', paddingLeft: 64 }}>
       <div style={{
         paddingTop: '30px',
@@ -27,6 +28,44 @@ function Artisist({ }) {
       </div>
     </div>
   );
+=======
+    <div style={{marginLeft:'5%'}}>
+      <div style={{paddingTop:'30px',display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%',rowGap:'20px' ,paddingBottom:'7%'}}>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+      <ArtistsItem/>
+
+      </div>
+    </div>
+  )
+>>>>>>> 4a00eca50d8d94f3b76bb781e055d34ca000bd48
 }
 
 export default Artisist;

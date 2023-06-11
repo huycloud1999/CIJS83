@@ -24,14 +24,15 @@
 .artistsItem span {
     font-weight: 500;
     align-self : flex-start;
+    color      : var(--body_color);
 }
 
 .artistsItem:hover span {
-    color: #7f5af0;
+    color: var(--button_color);
 }
 
 .artistsItem:hover {
-    background-color: #333232;
+    background-color: var(--item_color);
     scale           : 1.025;
     transition      : ease-in-out 0.5s;
     cursor          : pointer;
@@ -50,7 +51,7 @@
 }
 
 .artistsItem i {
-    color    : #7f5af0;
+    color    : var(--button_color);
     font-size: 50px;
     position : absolute;
     bottom   : 0;

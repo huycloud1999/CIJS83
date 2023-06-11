@@ -53,10 +53,11 @@ function TopAlbum() {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        width: '100%'
+                        width: '100%',
+                        cursor: 'pointer'
                     }}
                 >
-                    <div className={styles.topAlbumsImg}>
+                    <div className={styles.topAlbumsImg} onClick={() => handleClick(item)}>
                         <Image
                             src={item.imgArt}
                             fluid
@@ -76,7 +77,7 @@ function TopAlbum() {
                         </div>
                     </div>
                     <div>
-                        <button className={styles.likeBtn} onClick={() => handleClick(item)}>
+                        <button className={styles.likeBtn}>
                             <Icon><i class="fa-regular fa-heart" style={{ fontSize: 28 }}></i></Icon>
                         </button>
                     </div>

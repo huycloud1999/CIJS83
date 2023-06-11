@@ -13,6 +13,7 @@ import Playlist from "./components/Playlist/Playlist";
 import SignUp from "./components/SignUp/SignUp";
 import AlbumPlaylist from "./components/Playlist/AlbumPlaylist";
 import { MusicProvider } from "./MusicContext";
+import DarkMode from "./components/DarkMode/DarkMode";
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
         </Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+
       </Routes>
+
     </MusicProvider>
   );
 }

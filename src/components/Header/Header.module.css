@@ -1,0 +1,7 @@
+.headerContainer {
+    display         : flex;
+    justify-content : space-between;
+    width           : 90%;
+    align-items     : center;
+    background-color: var(--body_background);
+}

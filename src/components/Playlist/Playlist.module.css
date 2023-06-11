@@ -21,9 +21,10 @@
 }
 
 .playlist {
-  background-color: #16161a;
+  background-color: var(--body_background);
   padding-bottom  : 0;
   padding-bottom  : 6%;
+  color           : var(--body_color);
 }
 
 .headerPlaylist h1 {
@@ -39,23 +40,23 @@
 }
 
 .playlistButton i:first-child {
-  color    : #7f5af0;
+  color    : var(--button_color);
   font-size: 56px;
 }
 
 .playlistButton>i:first-child:hover {
   scale     : 1.1;
   transition: ease-in-out 0.2s;
-  color     : #7f5af0;
+  color     : var(--button_color);
 }
 
 .playlistButton i {
   font-size: 32px;
-  color    : #ccc;
+  color    : var(--body_color);
 }
 
 .playlistButton i:hover {
-  color     : white;
+  color     : var(--button_color);
   transition: ease-in-out 0.2s;
 }
 
@@ -71,6 +72,6 @@
   font-weight          : bold;
   position             : sticky;
   top                  : 10%;
-  background-color     : #7f5af0;
+  background-color     : var(--button_color);
   margin-bottom        : 10px;
 }

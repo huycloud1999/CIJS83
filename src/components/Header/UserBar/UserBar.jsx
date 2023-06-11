@@ -31,8 +31,8 @@ function UserBar() {
   if (user) {
     return (
       <div className={styles.userBar}>
-        <div className="haveUser" style={{display:'flex',alignItems:'center'}}>
-          <img src={user.userAvatar} alt="User Avatar"  style={{height:'45px',width:'44px',borderRadius:'50%'}}/>
+        <div className="haveUser" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={user.userAvatar} alt="User Avatar" style={{ height: '45px', width: '44px', borderRadius: '50%' }} />
           <button className={styles.interactBtn2} onClick={handleLogOut}>
             Log Out
           </button>
@@ -43,7 +43,7 @@ function UserBar() {
 
   return (
     <div className={styles.userBar}>
-      <button className={styles.userBtn}>
+      {/* <button className={styles.userBtn}>
         <Icon>
           <i
             class="fa-sharp fa-solid fa-user"
@@ -51,7 +51,7 @@ function UserBar() {
             style={{ fontSize: 24 }}
           ></i>
         </Icon>
-      </button>
+      </button> */}
       <button className={styles.interactBtn1} onClick={handleSignIN}>
         Sign In
       </button>

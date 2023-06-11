@@ -8,9 +8,26 @@ body {
   background-image       : url(https://cdn.pixabay.com/photo/2021/04/10/21/45/music-book-6168179_960_720.jpg);
   background-size        : cover;
   background-repeat      : no-repeat;
+}
 
+* {
+  transition: all 0.1s ease-in-out;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --body_background: #fffffe;
+  --body_color     : #2d334a;
+  --button_color   : #2cb67d;
+  --item_background: #dedede;
+}
+
+[data-theme="dark"] {
+  --body_background: #16161a;
+  --body_color     : #fffffe;
+  --button_color   : #7f5af0;
+  --item_background: #1A1E1F;
 }

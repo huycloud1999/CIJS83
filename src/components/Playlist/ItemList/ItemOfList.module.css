@@ -14,7 +14,7 @@
 
 .ItemList.active i {
   display: inline;
-  color  : #7f5af0;
+  color  : var(--button_color);
 }
 
 .ItemList.active .ordinalNumber {
@@ -41,7 +41,7 @@
 .ItemList i:hover {
   transform : scale(1.1);
   transition: ease-in-out 0.15s;
-  color     : #7f5af0;
+  color     : var(--button_color);
   cursor    : pointer;
 }
 

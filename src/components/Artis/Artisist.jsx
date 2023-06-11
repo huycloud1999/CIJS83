@@ -12,8 +12,15 @@ function Artisist({ }) {
   }, []);
 
   return (
-    <div style={{ marginLeft: '5%' }}>
-      <div style={{ paddingTop: '30px', display: 'grid', gridTemplateColumns: '20% 20% 20% 20% 20%', rowGap: '20px', paddingBottom: '7%' }}>
+    <div style={{ backgroundColor: 'var(--body_background)', paddingLeft: 64 }}>
+      <div style={{
+        paddingTop: '30px',
+        display: 'grid',
+        gridTemplateColumns: '20% 20% 20% 20% 20%',
+        rowGap: '20px',
+        paddingBottom: '7%',
+        backgroundColor: 'var(--body_background)',
+      }}>
         {artists.map(artist => (
           <ArtistsItem key={artist.id} artist={artist} />
         ))}

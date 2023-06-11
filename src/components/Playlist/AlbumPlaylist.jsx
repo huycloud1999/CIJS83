@@ -46,10 +46,9 @@ function AlbumsPlaylist() {
             <div className={styles["headerPlaylist"]}>
                 <img src={item.imgArt} alt="" />
                 <div>
-                    <h4>Playlist</h4>
-                    <h1>{item.nameArt}</h1>
+                    <h1>{item.album}</h1>
                     <p>
-                        Những bản nhạc hay nhất của kẻ hủy diệt âm nhạc {item.nameArt}
+                        Sountrack mới nhất của {item.nameArt} cho Spider-Man: Across the Spider-verse
                     </p>
                     <p>
                         {totalSongs} songs, about {formatDuration(totalDuration)}
@@ -57,7 +56,7 @@ function AlbumsPlaylist() {
                 </div>
             </div>
             <div className={styles["playlistButton"]}>
-                <i class="fa-solid fa-circle-play" style={{ color: '#7f5af0' }}></i>
+                <i class="fa-solid fa-circle-play" style={{ color: 'var(--button_color)' }}></i>
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-solid fa-ellipsis"></i>
             </div>

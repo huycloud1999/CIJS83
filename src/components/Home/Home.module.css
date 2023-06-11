@@ -5,8 +5,9 @@
     justify-content : space-between;
     padding         : 0 20px;
     border-radius   : 20px;
-    background-color: #1A1E1F;
-    gap             : 8px;
+    background-color: var(--item_background);
+    color           : var(--body_color);
+    gap             : 4px;
 }
 
 .topAlbums:hover {
@@ -21,7 +22,8 @@
     padding         : 10px 12px 8px 12px;
     border-radius   : 50%;
     border          : none;
-    background-color: #7f5af0;
+    background-color: var(--button_color);
+    transition      : all 0.2s ease-in-out;
 }
 
 .likeBtn:hover {
@@ -43,7 +45,7 @@
     border          : none;
     border-radius   : 50%;
     cursor          : pointer;
-    background-color: #7f5af0;
+    background-color: var(--button_color);
     opacity         : 0;
 }
 
@@ -80,7 +82,7 @@
 
 .bigPlayBtn {
     position        : absolute;
-    background-color: #7f5af0;
+    background-color: var(--button_color);
     bottom          : 60px;
     right           : -10px;
     border          : none;

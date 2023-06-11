@@ -2,7 +2,7 @@
     height          : 30px;
     border-radius   : 30px;
     padding         : 12px;
-    background-color: #7f5af0;
+    background-color: var(--button_color);
     margin          : 20px 12px;
     margin-left     : 20px;
 }
@@ -15,8 +15,7 @@
 }
 
 .searchBox:hover>.searchBtn {
-    /* background-color:#070700; */
-    color: #f7f7f7;
+    color: #fffffe;
 }
 
 .searchBtn {
@@ -26,11 +25,11 @@
     border-radius   : 50%;
     display         : flex;
     color           : #fffffe;
-    background-color: #7f5af0;
+    background-color: var(--button_color);
     justify-content : center;
     align-items     : center;
     cursor          : pointer;
-    border          : #7f5af0;
+    border          : var(--button_color);
 }
 
 .searchText {

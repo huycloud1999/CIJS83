@@ -15,8 +15,12 @@ function Home() {
 
   return (
 
-    <div style={{ padding: '30px', paddingBottom: '5%' }}>
-
+    <div style={{
+      padding: '30px',
+      paddingBottom: '5%',
+      backgroundColor: 'var(--body_background)',
+      color: 'var(--body_color)',
+    }}>
       <div style={{ height: '100%', display: 'flex' }}>
         <div style={{ width: '50%', cursor: 'pointer' }}>
           <Image
@@ -29,7 +33,7 @@ function Home() {
           paddingLeft: 32,
           width: '50%'
         }}>
-          <h2 style={{ paddingLeft: 36, margin: 0 }}>Top Albums</h2>
+          <h2 style={{ paddingLeft: 36, margin: 0, color: 'var(--body_color)' }}>Top Albums</h2>
           <div style={{ marginTop: 12 }}>
             <TopAlbum />
           </div>

@@ -43,7 +43,6 @@ function Playlist() {
       <div className={styles["headerPlaylist"]}>
         <img src={artist.imgArt} alt="" />
         <div>
-          <h4>Playlist</h4>
           <h1>{artist.nameArt}</h1>
           <p>
             Những bản nhạc hay nhất của kẻ hủy diệt âm nhạc {artist.nameArt}
@@ -54,7 +53,7 @@ function Playlist() {
         </div>
       </div>
       <div className={styles["playlistButton"]}>
-        <i class="fa-solid fa-circle-play" style={{ color: '#7f5af0' }}></i>
+        <i class="fa-solid fa-circle-play" style={{ color: 'var(--button_color)' }}></i>
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-ellipsis"></i>
       </div>

@@ -1,14 +1,12 @@
 import React from "react";
 import styles from './Home.module.css';
 import JazzAlbum from '../image/jazzalbum.jpg';
-import Icon from '../../shared/Icon';
 import TopAlbum from "./TopAlbum";
-import { NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
 import NewReleaseCard from "./NewReleaseCard";
 import Image from 'react-bootstrap/Image'
-import { MusicContext } from "../../MusicContext";
-import ItemOfList from '../Playlist/ItemList/ItemOfList';
+import NewReleaseCard2 from "./NewReleaseCard2";
+import NewReleaseCard3 from "./NewReleaseCard3";
+import NewReleaseCard4 from "./NewReleaseCard4";
 
 
 function Home() {
@@ -49,13 +47,19 @@ function Home() {
       <div className={styles.newRelease}>
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>Hip to the Hop</h2>
         <div className={styles.musicContainer}>
-          <NewReleaseCard />
+          <NewReleaseCard2 />
+        </div>
+      </div>
+      <div className={styles.newRelease}>
+        <h2 style={{ marginTop: 24, marginBottom: 12 }}>Rap</h2>
+        <div className={styles.musicContainer}>
+          <NewReleaseCard4 />
         </div>
       </div>
       <div className={styles.newRelease}>
         <h2 style={{ marginTop: 24, marginBottom: 12 }}>Recommend for you</h2>
         <div className={styles.musicContainer}>
-          <NewReleaseCard />
+          <NewReleaseCard3 />
         </div>
       </div>
     </div>

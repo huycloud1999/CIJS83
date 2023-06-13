@@ -42,7 +42,7 @@ function UserBar() {
 
   return (
     <div className={styles.userBar}>
-      {/* <button className={styles.userBtn}>
+      <button className={styles.userBtn}>
         <Icon>
           <i
             class="fa-sharp fa-solid fa-user"
@@ -50,7 +50,7 @@ function UserBar() {
             style={{ fontSize: 24 }}
           ></i>
         </Icon>
-      </button> */}
+      </button>
       <button className={styles.interactBtn1} onClick={handleSignIN}>
         Sign In
       </button>

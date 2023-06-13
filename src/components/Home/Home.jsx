@@ -7,6 +7,8 @@ import Image from 'react-bootstrap/Image'
 import NewReleaseCard2 from "./NewReleaseCard2";
 import NewReleaseCard3 from "./NewReleaseCard3";
 import NewReleaseCard4 from "./NewReleaseCard4";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 function Home() {
@@ -21,6 +23,7 @@ function Home() {
     }}>
       <div style={{ height: '100%', display: 'flex' }}>
         <div style={{ width: '50%', cursor: 'pointer' }}>
+          <h2 style={{ marginTop: 0, marginBottom: 12, paddingLeft: 20 }}>Featured Album</h2>
           <Image
             src={JazzAlbum}
             fluid

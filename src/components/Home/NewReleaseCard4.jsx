@@ -46,8 +46,8 @@ function NewReleaseCard4() {
                 <div className={styles.newReleaseCard} key={item.id}>
                     {/* <img src={item.image} alt="" style={{ width: '100%', borderRadius: 16, overflow: 'hidden', display: 'block' }} /> */}
                     <div style={{
-                        width: '200px',
-                        height: '200px',
+                        width: '180px',
+                        height: '180px',
                         borderRadius: 16,
                         overflow: 'hidden',
                         display: 'flex',

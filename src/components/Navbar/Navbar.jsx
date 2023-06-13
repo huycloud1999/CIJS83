@@ -62,7 +62,7 @@ const Navbar = () => {
             activeLink={activeLink}
             handleLinkClick={handleLinkClick}
           />
-          <div style={{ marginTop: 320 }}>
+          <div style={{ marginTop: 200 }}>
             <DarkMode />
           </div>
         </ul>

@@ -1,9 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import ItemOfList from '../Playlist/ItemList/ItemOfList';
-import Playlist from '../Playlist/Playlist';
-import { useContext } from "react";
-import { MusicContext } from "../../MusicContext";
-import { useLocation, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styles from './Home.module.css';
 import Icon from '../../shared/Icon';
@@ -41,7 +36,7 @@ function TopAlbum() {
     const handleClick = (item) => {
         const listAlbum = item.playList;
         navigate("/albumplaylist", { state: item });
-        // console.log(listAlbum);
+        console.log(listAlbum);
     };
 
     return (

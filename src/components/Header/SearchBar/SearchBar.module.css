@@ -5,6 +5,7 @@
   background-color: var(--button_color);
   margin          : 20px 12px;
   margin-left     : 20px;
+  position:relative;
 }
 
 .searchBox:hover>.searchText,
@@ -54,6 +55,7 @@
 }
 
 .searchResults {
+  position: absolute;
   background-color: #776f6f;
   border-radius   : 4px;
   padding         : 10px;

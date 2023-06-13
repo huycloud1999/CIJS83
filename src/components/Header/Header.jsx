@@ -10,7 +10,7 @@ function Header() {
 
 
   return (
-    <div className={styles.headerContainer} style={{ display: 'flex', justifyContent: 'space-between', width: '90%', alignItems: 'center' }}>
+    <div className={styles.headerContainer} style={{ display: 'flex', justifyContent: 'space-between', width: '90%',}}>
       <div>
         <SearchBar />
 

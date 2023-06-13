@@ -31,11 +31,9 @@ function UserBar() {
   if (user) {
     return (
       <div className={styles.userBar}>
-        <button className={styles.userBtn}>
-          <Icon><i class="fa-sharp fa-solid fa-user" aria-hidden='true' style={{ fontSize: 24 }}></i></Icon>
-        </button>
-        <button className={styles.interactBtn1} onClick={handleSignIN}>Sign In</button>
-        <button className={styles.interactBtn2} onClick={handleSignUP}>Sign Up</button>
+       <img src={user.userAvatar} alt="" style={{width:50,height:50,borderRadius:'50%'}} />
+       <span>{user.userEmail}</span>
+        <button className={styles.interactBtn1} onClick={handleSignIN}>Log Out</button>
       </div>
     );
   }

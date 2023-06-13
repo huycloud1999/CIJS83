@@ -84,7 +84,7 @@
     position        : absolute;
     background-color: var(--button_color);
     bottom          : 60px;
-    right           : -10px;
+    right           : 8px;
     border          : none;
     border-radius   : 50%;
     cursor          : pointer;

@@ -33,7 +33,7 @@ function UserBar() {
       <div className={styles.userBar}>
        <img src={user.userAvatar} alt="" style={{width:50,height:50,borderRadius:'50%'}} />
        <span>{user.userEmail}</span>
-        <button className={styles.interactBtn1} onClick={handleSignIN}>Log Out</button>
+        <button className={styles.interactBtn1} onClick={handleLogOut}>Log Out</button>
       </div>
     );
   }

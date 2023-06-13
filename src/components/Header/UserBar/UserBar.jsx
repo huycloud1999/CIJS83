@@ -31,8 +31,8 @@ function UserBar() {
   if (user) {
     return (
       <div className={styles.userBar}>
-       <img src={user.userAvatar} alt="" style={{width:50,height:50,borderRadius:'50%'}} />
-       <span>{user.userEmail}</span>
+        <img src={user.userAvatar} alt="" style={{ width: 50, height: 50, borderRadius: '50%' }} />
+        <span style={{ color: 'var(--body_color)' }}>{user.userEmail}</span>
         <button className={styles.interactBtn1} onClick={handleLogOut}>Log Out</button>
       </div>
     );

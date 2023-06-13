@@ -40,3 +40,8 @@
   color    : #b3b3b3;
   font-size: 23px;
 }
+.navbar-container li a.active span,
+.navbar-container li a.active i {
+  color: var(--button_color);
+  font-size: 20px;
+}

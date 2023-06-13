@@ -13,8 +13,9 @@ function Artisist({ }) {
 
   return (
     <div style={{ backgroundColor: 'var(--body_background)', paddingLeft: 64 }}>
+      <h1 style={{paddingTop: '30px'}}>Artists</h1>
       <div style={{
-        paddingTop: '30px',
+        
         display: 'grid',
         gridTemplateColumns: '20% 20% 20% 20% 20%',
         rowGap: '20px',
